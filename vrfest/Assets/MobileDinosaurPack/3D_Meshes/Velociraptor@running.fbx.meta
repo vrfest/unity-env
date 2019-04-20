@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 568de23fc5ae1a240b5a9d9f6b654415
+timeCreated: 1438877254
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: skin_Head
+    100002: skin_L_Ankle
+    100004: skin_L_Arm_Root
+    100006: skin_L_Elbow
+    100008: skin_L_Fingers
+    100010: skin_L_Foot
+    100012: skin_L_Hand
+    100014: skin_L_Knee
+    100016: skin_L_Leg_Root
+    100018: skin_L_Toe
+    100020: skin_Lower_Jaw
+    100022: skin_Neck
+    100024: skin_R_Ankle
+    100026: skin_R_Arm_Root
+    100028: skin_R_Elbow
+    100030: skin_R_Fingers
+    100032: skin_R_Foot
+    100034: skin_R_Hand
+    100036: skin_R_Knee
+    100038: skin_R_Reg_Root
+    100040: skin_R_Toe
+    100042: skin_Root
+    100044: skin_Spine
+    100046: skin_Tail01
+    100048: skin_Tail02
+    100050: skin_Tail03
+    100052: skin_Tail_Root
+    100054: skin_Upper_Jaw
+    100056: //RootNode
+    100058: Velociraptor_Mesh
+    400000: skin_Head
+    400002: skin_L_Ankle
+    400004: skin_L_Arm_Root
+    400006: skin_L_Elbow
+    400008: skin_L_Fingers
+    400010: skin_L_Foot
+    400012: skin_L_Hand
+    400014: skin_L_Knee
+    400016: skin_L_Leg_Root
+    400018: skin_L_Toe
+    400020: skin_Lower_Jaw
+    400022: skin_Neck
+    400024: skin_R_Ankle
+    400026: skin_R_Arm_Root
+    400028: skin_R_Elbow
+    400030: skin_R_Fingers
+    400032: skin_R_Foot
+    400034: skin_R_Hand
+    400036: skin_R_Knee
+    400038: skin_R_Reg_Root
+    400040: skin_R_Toe
+    400042: skin_Root
+    400044: skin_Spine
+    400046: skin_Tail01
+    400048: skin_Tail02
+    400050: skin_Tail03
+    400052: skin_Tail_Root
+    400054: skin_Upper_Jaw
+    400056: //RootNode
+    400058: Velociraptor_Mesh
+    4300000: Velociraptor_Mesh
+    7400000: running
+    9500000: //RootNode
+    13700000: Velociraptor_Mesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: running
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: skin_Root
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle/skin_L_Foot
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle/skin_L_Foot/skin_L_Toe
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle/skin_R_Foot
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle/skin_R_Foot/skin_R_Toe
+        weight: 1
+      - path: skin_Root/skin_Spine
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head/skin_Lower_Jaw
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head/skin_Upper_Jaw
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow/skin_L_Hand
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow/skin_L_Hand/skin_L_Fingers
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow/skin_R_Hand
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow/skin_R_Hand/skin_R_Fingers
+        weight: 1
+      - path: skin_Root/skin_Tail_Root
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01/skin_Tail02
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01/skin_Tail02/skin_Tail03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 0
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 3727d34476bc5bf42a18dd1474f9e32a,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

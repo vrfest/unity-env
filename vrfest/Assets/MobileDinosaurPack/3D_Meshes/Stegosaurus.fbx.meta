@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 50c0c2c5caa1d3e488a4627f938f3ea3
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: belly
+  - first:
+      1: 100004
+    second: chest
+  - first:
+      1: 100006
+    second: Constraints_IK
+  - first:
+      1: 100008
+    second: head
+  - first:
+      1: 100010
+    second: ikHandle_LF_Foot
+  - first:
+      1: 100012
+    second: ikHandle_LR_Foot
+  - first:
+      1: 100014
+    second: ikHandle_RF_Foot
+  - first:
+      1: 100016
+    second: ikHandle_RR_Foot
+  - first:
+      1: 100018
+    second: jaw
+  - first:
+      1: 100020
+    second: L_frontAnkle
+  - first:
+      1: 100022
+    second: L_frontFoot
+  - first:
+      1: 100024
+    second: L_frontLowerLeg
+  - first:
+      1: 100026
+    second: L_frontToe
+  - first:
+      1: 100028
+    second: L_frontUpperLeg
+  - first:
+      1: 100030
+    second: L_rearAnkle
+  - first:
+      1: 100032
+    second: L_rearFoot
+  - first:
+      1: 100034
+    second: L_rearLowerLeg
+  - first:
+      1: 100036
+    second: L_rearToe
+  - first:
+      1: 100038
+    second: L_rearUpperLeg
+  - first:
+      1: 100040
+    second: neck_01
+  - first:
+      1: 100042
+    second: pelvis
+  - first:
+      1: 100044
+    second: R_frontAnkle
+  - first:
+      1: 100046
+    second: R_frontFoot
+  - first:
+      1: 100048
+    second: R_frontRowerReg
+  - first:
+      1: 100050
+    second: R_frontToe
+  - first:
+      1: 100052
+    second: R_frontUpperReg
+  - first:
+      1: 100054
+    second: R_rearAnkle
+  - first:
+      1: 100056
+    second: R_rearFoot
+  - first:
+      1: 100058
+    second: R_rearRowerReg
+  - first:
+      1: 100060
+    second: R_rearToe
+  - first:
+      1: 100062
+    second: R_rearUpperReg
+  - first:
+      1: 100064
+    second: Rig
+  - first:
+      1: 100066
+    second: spine_01
+  - first:
+      1: 100068
+    second: spine_02
+  - first:
+      1: 100070
+    second: spine_03
+  - first:
+      1: 100072
+    second: spine_04
+  - first:
+      1: 100074
+    second: Stegosaurus
+  - first:
+      1: 100076
+    second: Stegosaurus_mesh
+  - first:
+      1: 100078
+    second: tail_01
+  - first:
+      1: 100080
+    second: tail_02
+  - first:
+      1: 100082
+    second: tail_03
+  - first:
+      1: 100084
+    second: tailBase
+  - first:
+      1: 100086
+    second: TailTip
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: belly
+  - first:
+      4: 400004
+    second: chest
+  - first:
+      4: 400006
+    second: Constraints_IK
+  - first:
+      4: 400008
+    second: head
+  - first:
+      4: 400010
+    second: ikHandle_LF_Foot
+  - first:
+      4: 400012
+    second: ikHandle_LR_Foot
+  - first:
+      4: 400014
+    second: ikHandle_RF_Foot
+  - first:
+      4: 400016
+    second: ikHandle_RR_Foot
+  - first:
+      4: 400018
+    second: jaw
+  - first:
+      4: 400020
+    second: L_frontAnkle
+  - first:
+      4: 400022
+    second: L_frontFoot
+  - first:
+      4: 400024
+    second: L_frontLowerLeg
+  - first:
+      4: 400026
+    second: L_frontToe
+  - first:
+      4: 400028
+    second: L_frontUpperLeg
+  - first:
+      4: 400030
+    second: L_rearAnkle
+  - first:
+      4: 400032
+    second: L_rearFoot
+  - first:
+      4: 400034
+    second: L_rearLowerLeg
+  - first:
+      4: 400036
+    second: L_rearToe
+  - first:
+      4: 400038
+    second: L_rearUpperLeg
+  - first:
+      4: 400040
+    second: neck_01
+  - first:
+      4: 400042
+    second: pelvis
+  - first:
+      4: 400044
+    second: R_frontAnkle
+  - first:
+      4: 400046
+    second: R_frontFoot
+  - first:
+      4: 400048
+    second: R_frontRowerReg
+  - first:
+      4: 400050
+    second: R_frontToe
+  - first:
+      4: 400052
+    second: R_frontUpperReg
+  - first:
+      4: 400054
+    second: R_rearAnkle
+  - first:
+      4: 400056
+    second: R_rearFoot
+  - first:
+      4: 400058
+    second: R_rearRowerReg
+  - first:
+      4: 400060
+    second: R_rearToe
+  - first:
+      4: 400062
+    second: R_rearUpperReg
+  - first:
+      4: 400064
+    second: Rig
+  - first:
+      4: 400066
+    second: spine_01
+  - first:
+      4: 400068
+    second: spine_02
+  - first:
+      4: 400070
+    second: spine_03
+  - first:
+      4: 400072
+    second: spine_04
+  - first:
+      4: 400074
+    second: Stegosaurus
+  - first:
+      4: 400076
+    second: Stegosaurus_mesh
+  - first:
+      4: 400078
+    second: tail_01
+  - first:
+      4: 400080
+    second: tail_02
+  - first:
+      4: 400082
+    second: tail_03
+  - first:
+      4: 400084
+    second: tailBase
+  - first:
+      4: 400086
+    second: TailTip
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Stegosaurus_mesh
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Stegosaurus_mesh
+  - first:
+      43: 4300000
+    second: Stegosaurus
+  - first:
+      43: 4300002
+    second: Stegosaurus_mesh
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Stegosaurus_mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stegosaurus_MAT
+    second: {fileID: 2100000, guid: d436d92837bba454fb9eed93bdbaf4c5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/Constraints_IK
+        weight: 1
+      - path: Rig/Constraints_IK/ikHandle_LF_Foot
+        weight: 1
+      - path: Rig/Constraints_IK/ikHandle_LR_Foot
+        weight: 1
+      - path: Rig/Constraints_IK/ikHandle_RF_Foot
+        weight: 1
+      - path: Rig/Constraints_IK/ikHandle_RR_Foot
+        weight: 1
+      - path: Stegosaurus
+        weight: 1
+      - path: Stegosaurus/pelvis
+        weight: 1
+      - path: Stegosaurus/pelvis/L_rearUpperLeg
+        weight: 1
+      - path: Stegosaurus/pelvis/L_rearUpperLeg/L_rearLowerLeg
+        weight: 1
+      - path: Stegosaurus/pelvis/L_rearUpperLeg/L_rearLowerLeg/L_rearAnkle
+        weight: 1
+      - path: Stegosaurus/pelvis/L_rearUpperLeg/L_rearLowerLeg/L_rearAnkle/L_rearFoot
+        weight: 1
+      - path: Stegosaurus/pelvis/L_rearUpperLeg/L_rearLowerLeg/L_rearAnkle/L_rearFoot/L_rearToe
+        weight: 1
+      - path: Stegosaurus/pelvis/R_rearUpperReg
+        weight: 1
+      - path: Stegosaurus/pelvis/R_rearUpperReg/R_rearRowerReg
+        weight: 1
+      - path: Stegosaurus/pelvis/R_rearUpperReg/R_rearRowerReg/R_rearAnkle
+        weight: 1
+      - path: Stegosaurus/pelvis/R_rearUpperReg/R_rearRowerReg/R_rearAnkle/R_rearFoot
+        weight: 1
+      - path: Stegosaurus/pelvis/R_rearUpperReg/R_rearRowerReg/R_rearAnkle/R_rearFoot/R_rearToe
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/belly
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/L_frontUpperLeg
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/L_frontUpperLeg/L_frontLowerLeg
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/L_frontUpperLeg/L_frontLowerLeg/L_frontAnkle
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/L_frontUpperLeg/L_frontLowerLeg/L_frontAnkle/L_frontFoot
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/L_frontUpperLeg/L_frontLowerLeg/L_frontAnkle/L_frontFoot/L_frontToe
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/neck_01
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/neck_01/head
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/neck_01/head/jaw
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/R_frontUpperReg
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/R_frontUpperReg/R_frontRowerReg
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/R_frontUpperReg/R_frontRowerReg/R_frontAnkle
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/R_frontUpperReg/R_frontRowerReg/R_frontAnkle/R_frontFoot
+        weight: 1
+      - path: Stegosaurus/pelvis/spine_01/spine_02/spine_03/spine_04/chest/R_frontUpperReg/R_frontRowerReg/R_frontAnkle/R_frontFoot/R_frontToe
+        weight: 1
+      - path: Stegosaurus/pelvis/tailBase
+        weight: 1
+      - path: Stegosaurus/pelvis/tailBase/tail_01
+        weight: 1
+      - path: Stegosaurus/pelvis/tailBase/tail_01/tail_02
+        weight: 1
+      - path: Stegosaurus/pelvis/tailBase/tail_01/tail_02/tail_03
+        weight: 1
+      - path: Stegosaurus/pelvis/tailBase/tail_01/tail_02/tail_03/TailTip
+        weight: 1
+      - path: Stegosaurus/Stegosaurus_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: 1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 607711ba4c53ce646b99ede6819fda9d
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
