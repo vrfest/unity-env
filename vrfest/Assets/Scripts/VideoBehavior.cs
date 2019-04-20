@@ -23,6 +23,6 @@ public class VideoBehavior : MonoBehaviour
             videoPlayer.Play();
             Destroy(this);
         }
-        Debug.Log(delay);
+        //Debug.Log(delay);
     }
 }
