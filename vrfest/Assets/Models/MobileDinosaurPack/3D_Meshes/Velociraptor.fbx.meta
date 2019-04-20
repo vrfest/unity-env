@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 3727d34476bc5bf42a18dd1474f9e32a
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: skin_Head
+  - first:
+      1: 100002
+    second: skin_L_Ankle
+  - first:
+      1: 100004
+    second: skin_L_Arm_Root
+  - first:
+      1: 100006
+    second: skin_L_Elbow
+  - first:
+      1: 100008
+    second: skin_L_Fingers
+  - first:
+      1: 100010
+    second: skin_L_Foot
+  - first:
+      1: 100012
+    second: skin_L_Hand
+  - first:
+      1: 100014
+    second: skin_L_Knee
+  - first:
+      1: 100016
+    second: skin_L_Leg_Root
+  - first:
+      1: 100018
+    second: skin_L_Toe
+  - first:
+      1: 100020
+    second: skin_Lower_Jaw
+  - first:
+      1: 100022
+    second: skin_Neck
+  - first:
+      1: 100024
+    second: skin_R_Ankle
+  - first:
+      1: 100026
+    second: skin_R_Arm_Root
+  - first:
+      1: 100028
+    second: skin_R_Elbow
+  - first:
+      1: 100030
+    second: skin_R_Fingers
+  - first:
+      1: 100032
+    second: skin_R_Foot
+  - first:
+      1: 100034
+    second: skin_R_Hand
+  - first:
+      1: 100036
+    second: skin_R_Knee
+  - first:
+      1: 100038
+    second: skin_R_Reg_Root
+  - first:
+      1: 100040
+    second: skin_R_Toe
+  - first:
+      1: 100042
+    second: skin_Root
+  - first:
+      1: 100044
+    second: skin_Spine
+  - first:
+      1: 100046
+    second: skin_Tail01
+  - first:
+      1: 100048
+    second: skin_Tail02
+  - first:
+      1: 100050
+    second: skin_Tail03
+  - first:
+      1: 100052
+    second: skin_Tail_Root
+  - first:
+      1: 100054
+    second: skin_Upper_Jaw
+  - first:
+      1: 100056
+    second: //RootNode
+  - first:
+      1: 100058
+    second: Velociraptor_Mesh
+  - first:
+      4: 400000
+    second: skin_Head
+  - first:
+      4: 400002
+    second: skin_L_Ankle
+  - first:
+      4: 400004
+    second: skin_L_Arm_Root
+  - first:
+      4: 400006
+    second: skin_L_Elbow
+  - first:
+      4: 400008
+    second: skin_L_Fingers
+  - first:
+      4: 400010
+    second: skin_L_Foot
+  - first:
+      4: 400012
+    second: skin_L_Hand
+  - first:
+      4: 400014
+    second: skin_L_Knee
+  - first:
+      4: 400016
+    second: skin_L_Leg_Root
+  - first:
+      4: 400018
+    second: skin_L_Toe
+  - first:
+      4: 400020
+    second: skin_Lower_Jaw
+  - first:
+      4: 400022
+    second: skin_Neck
+  - first:
+      4: 400024
+    second: skin_R_Ankle
+  - first:
+      4: 400026
+    second: skin_R_Arm_Root
+  - first:
+      4: 400028
+    second: skin_R_Elbow
+  - first:
+      4: 400030
+    second: skin_R_Fingers
+  - first:
+      4: 400032
+    second: skin_R_Foot
+  - first:
+      4: 400034
+    second: skin_R_Hand
+  - first:
+      4: 400036
+    second: skin_R_Knee
+  - first:
+      4: 400038
+    second: skin_R_Reg_Root
+  - first:
+      4: 400040
+    second: skin_R_Toe
+  - first:
+      4: 400042
+    second: skin_Root
+  - first:
+      4: 400044
+    second: skin_Spine
+  - first:
+      4: 400046
+    second: skin_Tail01
+  - first:
+      4: 400048
+    second: skin_Tail02
+  - first:
+      4: 400050
+    second: skin_Tail03
+  - first:
+      4: 400052
+    second: skin_Tail_Root
+  - first:
+      4: 400054
+    second: skin_Upper_Jaw
+  - first:
+      4: 400056
+    second: //RootNode
+  - first:
+      4: 400058
+    second: Velociraptor_Mesh
+  - first:
+      43: 4300000
+    second: Velociraptor_Mesh
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Velociraptor_Mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Velociraptor_Mat
+    second: {fileID: 2100000, guid: 532092dd6abd0f742a0aa3df20af25b5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 7400000
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: skin_Root
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle/skin_L_Foot
+        weight: 1
+      - path: skin_Root/skin_L_Leg_Root/skin_L_Knee/skin_L_Ankle/skin_L_Foot/skin_L_Toe
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle/skin_R_Foot
+        weight: 1
+      - path: skin_Root/skin_R_Reg_Root/skin_R_Knee/skin_R_Ankle/skin_R_Foot/skin_R_Toe
+        weight: 1
+      - path: skin_Root/skin_Spine
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head/skin_Lower_Jaw
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_Head/skin_Upper_Jaw
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow/skin_L_Hand
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_L_Arm_Root/skin_L_Elbow/skin_L_Hand/skin_L_Fingers
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow/skin_R_Hand
+        weight: 1
+      - path: skin_Root/skin_Spine/skin_Neck/skin_R_Arm_Root/skin_R_Elbow/skin_R_Hand/skin_R_Fingers
+        weight: 1
+      - path: skin_Root/skin_Tail_Root
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01/skin_Tail02
+        weight: 1
+      - path: skin_Root/skin_Tail_Root/skin_Tail01/skin_Tail02/skin_Tail03
+        weight: 1
+      - path: Velociraptor_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: 1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 78dfccada46d9a743afcb33d3ec3d204
+  - fe83834ed2d47074aa634e9b67d89cb9
+  - a153db1c4cc479244b75196ce56ad515
+  - 0b4a35a083f6d67458bee6a02b8d906f
+  - eb4e4ca3a90e2e94c82513c7e027f5f4
+  - 568de23fc5ae1a240b5a9d9f6b654415
+  - f8bf713c007385b4790633932a725db8
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: d394a8fa05e1c7d42bb302ca42538b3a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arm_Pad_A
+    100004: Arm_Pad_B
+    100006: Head_Control_Offset
+    100008: Head_Control_Pad_A
+    100010: Head_Control_Pad_B
+    100012: Head_Lower_Jaw
+    100014: Head_Lower_Jaw_End
+    100016: Head_Root
+    100018: Head_Upper
+    100020: Head_Upper_End
+    100022: Jaw_Pad_A
+    100024: Jaw_Pad_B
+    100026: Left_Leg_Elbow
+    100028: Left_Leg_Elbow 1
+    100030: Legs_Pad_A
+    100032: Legs_Pad_B
+    100034: Lt_Arm_Elbow
+    100036: Lt_Arm_Finger_End
+    100038: Lt_Arm_Knuckle
+    100040: Lt_Arm_Root
+    100042: Lt_Arm_Wrist
+    100044: Lt_Foot_Root
+    100046: Lt_Leg_Knee
+    100048: Lt_Leg_Root
+    100050: Lt_Toe_End
+    100052: Lt_Toe_Root
+    100054: Neck_Root
+    100056: Root
+    100058: Rt_Arm_Elbow
+    100060: Rt_Arm_Finger_End
+    100062: Rt_Arm_Knuckle
+    100064: Rt_Arm_Root
+    100066: Rt_Arm_Wrist
+    100068: Rt_Foot_Root
+    100070: Rt_Leg_Knee
+    100072: Rt_Leg_Root
+    100074: Rt_Toe_End
+    100076: Rt_Toe_Root
+    100078: Spine_A
+    100080: Spine_B
+    100082: Tail_A
+    100084: Tail_B
+    100086: Tail_C
+    100088: Tail_End
+    100090: Tail_Pad_A
+    100092: Tail_Pad_B
+    100094: Tail_Root
+    100096: Velociraptor
+    400000: //RootNode
+    400002: Arm_Pad_A
+    400004: Arm_Pad_B
+    400006: Head_Control_Offset
+    400008: Head_Control_Pad_A
+    400010: Head_Control_Pad_B
+    400012: Head_Lower_Jaw
+    400014: Head_Lower_Jaw_End
+    400016: Head_Root
+    400018: Head_Upper
+    400020: Head_Upper_End
+    400022: Jaw_Pad_A
+    400024: Jaw_Pad_B
+    400026: Left_Leg_Elbow
+    400028: Left_Leg_Elbow 1
+    400030: Legs_Pad_A
+    400032: Legs_Pad_B
+    400034: Lt_Arm_Elbow
+    400036: Lt_Arm_Finger_End
+    400038: Lt_Arm_Knuckle
+    400040: Lt_Arm_Root
+    400042: Lt_Arm_Wrist
+    400044: Lt_Foot_Root
+    400046: Lt_Leg_Knee
+    400048: Lt_Leg_Root
+    400050: Lt_Toe_End
+    400052: Lt_Toe_Root
+    400054: Neck_Root
+    400056: Root
+    400058: Rt_Arm_Elbow
+    400060: Rt_Arm_Finger_End
+    400062: Rt_Arm_Knuckle
+    400064: Rt_Arm_Root
+    400066: Rt_Arm_Wrist
+    400068: Rt_Foot_Root
+    400070: Rt_Leg_Knee
+    400072: Rt_Leg_Root
+    400074: Rt_Toe_End
+    400076: Rt_Toe_Root
+    400078: Spine_A
+    400080: Spine_B
+    400082: Tail_A
+    400084: Tail_B
+    400086: Tail_C
+    400088: Tail_End
+    400090: Tail_Pad_A
+    400092: Tail_Pad_B
+    400094: Tail_Root
+    400096: Velociraptor
+    2300000: //RootNode
+    2300002: Velociraptor
+    3300000: //RootNode
+    3300002: Velociraptor
+    4300000: T_Rex
+    4300002: Velociraptor
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
