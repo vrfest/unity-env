@@ -333,9 +333,15 @@ namespace Puppet
             _feet[0] = origin - foot;
             _feet[1] = origin + foot;
         }
-
+        
+        private int toggle = 0;
         void Update()
         {
+            if(toggle == 1) {
+                toggle = 0;
+                return;
+            }
+            toggle++;
             // Noise update
             _noise.Frequency = _noiseFrequency;
             _noise.Step();

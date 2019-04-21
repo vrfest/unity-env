@@ -1,5 +1,15 @@
-﻿# Vive Input Utility for Unity - v1.10.2
+﻿# Vive Input Utility for Unity - v1.10.3
 Copyright (c) 2016-2019, HTC Corporation. All rights reserved.
+
+
+## Changes for v1.10.3:
+
+* Improvement
+  - [WaveVRModule] Support WaveVR simulator (Enable VIVE Focus support in Editor mode)
+
+* Bug Fix
+  - [WaveVRModule] Fix WaveVR tracking glitter issue
+  - [WaveVRModule] Fix VIU simulator cannot launch (ONLY enable VIU simulator)
 
 
 ## Changes for v1.10.2:
