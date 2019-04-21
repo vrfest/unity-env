@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] float _interval = 1;
     [SerializeField] GameObject _origin;
     [SerializeField] GameObject _end;
+    [SerializeField] float _spawnY = 0;
     void Start()
     {
         // Find the markers indicating the boundaries to spawn dancers
@@ -28,7 +29,7 @@ public class Spawner : MonoBehaviour
             for (var j = 0; j < _rows; j++)
             {
                 //var y = _interval * (j - _rows * 0.5f + 0.5f);
-                var pos = new Vector3(originX + UnityEngine.Random.Range(-2.5f, 2.5f), 0, originZ + UnityEngine.Random.Range(-2.5f, 2.5f));
+                var pos = new Vector3(originX + UnityEngine.Random.Range(-2.5f, 2.5f), _spawnY, originZ + UnityEngine.Random.Range(-2.5f, 2.5f));
                 originZ -= rowShift;
                 var rot = Quaternion.AngleAxis(UnityEngine.Random.value * Mathf.PI, Vector2.up);
 
