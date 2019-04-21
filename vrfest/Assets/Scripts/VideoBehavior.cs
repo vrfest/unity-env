@@ -13,7 +13,6 @@ public class VideoBehavior : MonoBehaviour
     void Start()
     {
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
-        videoPlayer.frame = 815;
         videoPlayer.Play();
     }
 
