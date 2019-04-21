@@ -14,6 +14,7 @@ public class VideoBehavior : MonoBehaviour
     {
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
         videoPlayer.Play();
+        gameObject.GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
