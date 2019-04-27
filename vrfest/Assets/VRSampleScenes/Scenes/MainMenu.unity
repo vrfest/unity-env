@@ -777,7 +777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11461874, guid: 8425dec361a86f6419d316a88d6c87d9, type: 3}
       propertyPath: m_SceneToLoad
-      value: Demo
+      value: Cooper
       objectReference: {fileID: 0}
     - target: {fileID: 11487422, guid: 8425dec361a86f6419d316a88d6c87d9, type: 3}
       propertyPath: m_Transform

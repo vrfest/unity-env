@@ -1,0 +1,80 @@
+Mesh Explosion
+
+ by NDP Tools
+ tools@neverdontplay.com
+
+
+- Version History
+
+1.10 2018-12-19
+ Updated for versions 4.0.0-preview and later of the Lightweight Render Pipeline package (including version 4.1.0-preview that is included with Unity 2018.3).
+
+1.9 2018-05-05
+ Updated for Unity 2018.1 including adding support for Unity's new Scriptable Render Pipelines.
+  Specifically, that means that Mesh Explosion's fading feature can now automatically fade out materials that use the standard shaders from the Lightweight and High-Definition SRPs.
+  When you import the package into a project using one of the new SRPs you may notice that the demo scene materials are broken (because the old shaders aren't supported by the SRP). You can update the materials to use the SRP's shaders by selecting them in the Project view and using the menu item Edit > Render Pipeline > Upgrade Selected Materials to [LightWeight/High Definition] Materials (that step might be automated when importing from the Asset Store).
+ Updated the demo materials to use the Standard Shader.
+ Dropped support for Unity versions 3 and 4.
+
+1.8 2016-12-02
+ Updated for Unity 5.5.
+
+1.7 2016-09-26
+ Updated for Unity 5.4 (mainly by fixing deprecation warnings).
+
+1.6 2015-02-12
+ Fixed explosions of GameObjects using Unity 5's standard shader not fading out.
+
+1.5 2015-02-10
+ Updated to work with Unity 5 (while still being compatible with Unity 3 and 4 as well).
+ Fixed skinned meshes being scaled wrongly when exploded.
+ Fixed exception when trying to explode a mesh with an empty normals array.
+ Fixed the 'no transparent shader found' message being displayed when the original shader was one with a "Transparent/" prefix already.
+
+1.4 2013-11-12
+ Fixed exploding GameObjects that are scaled.
+ Added support for fading materials that use a property named "_TintColor" rather than "_Color".
+ Fixed explosions never finishing if fading is not possible.
+ Fixed exploding animated meshes only working on Unity 4.0.x and not on Unity 4.1 or above.
+
+1.3 2012-12-05
+ Improved the physics test scene by replacing the cubes with icospheres.
+
+1.2 2012-12-04
+ Added an option to create 'Physics' explosions where the explosion fragments interact with the environment. This mode creates a new GameObject with a Rigidbody for each triangle in the original object so is only suitable for use with very low-polygon meshes.
+ Added a custom inspector to show only the options that are relevant for the current explosion type, and to add tooltip descriptions for all options.
+ Fixed 'Use Gravity' option behaving badly when used on GameObjects that are rotated.
+
+1.1 2012-11-26
+ Added 'Use Gravity' option
+
+1.0 2012-11-23
+ First version
+
+
+- Introduction
+
+Mesh Explosion is a script package that takes any mesh and animates it exploding into its component triangles.
+
+
+- Usage
+
+Using Mesh Explosion is extremely simple. Find one of your GameObjects with a MeshFilter and MeshRenderer (or a SkinnedMeshRenderer).
+
+Add the MeshExploder script to the GameObject (it's in the Component / Mesh menu). Leave the parameters at their defaults for now.
+
+Now when you want to make the GameObject explode you simply need to call the Explode() method of the MeshExploder component, or send the GameObject an "Explode" message. The explosion is created as a separate GameObject so you'll also want to destroy the original, or at least disable its renderer component if you still need the GameObject for other reasons.
+
+For testing purposes the package includes a script called ClickOrTapToExplode (in the Demo folder) which sends the "Explode" message and destroys the GameObject when it is clicked (or tapped on touchscreen platforms). It requires a collider to detect when the object is touched, so attach an appropriate collider for your mesh and configure its proportions, and then add the ClickOrTapToExplode component.
+
+Play the game, click or tap the object, and watch it E X P L O D E.
+
+
+- Parameters
+
+Hover your mouse over the parameter names in the inspector for a tooltip that describes what they do.
+
+
+- Support
+
+If you have any problems, questions, bug reports, or feature requests please email <tools@neverdontplay.com>. I aim to answer all support emails in one working day or less.
