@@ -24,6 +24,8 @@ public class Route : MonoBehaviour
     public GameObject[] particles;
     int particlesIndex = 0;
     Quaternion rot = new Quaternion();
+    int particleDelay = 0;
+    List<GameObject> activeParticles = new List<GameObject>();
 
     private List<Vector3> particleLocations;
 
@@ -94,12 +96,22 @@ public class Route : MonoBehaviour
                 if (cooldown++ > 20) phase++;
                 break;
             case 7: // PS Lightshow
-                foreach(Vector3 particleLocation in particleLocations) {
-                    GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
-                    ParticleSystem particlePrefabPS = particlePrefab.GetComponent<ParticleSystem>();
-                    particlePrefabPS.Play();
+                if(particleDelay <= 0) {
+                    particleDelay = 200;
+                    foreach (GameObject activeParticle in activeParticles) {
+                        Destroy(activeParticle);
+                    }
+                    activeParticles.Clear();
+                    foreach (Vector3 particleLocation in particleLocations) {
+                        GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
+                        activeParticles.Add(particlePrefab);
+                        ParticleSystem particlePrefabPS = particlePrefab.GetComponent<ParticleSystem>();
+                        particlePrefabPS.Play();
+                    }
+                    if (particlesIndex++ == particles.Length) particlesIndex = 0;
                 }
-                particlesIndex++;
+                else particleDelay--;
+                
                 break;
                 
         }
