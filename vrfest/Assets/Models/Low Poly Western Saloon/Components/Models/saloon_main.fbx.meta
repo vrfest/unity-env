@@ -1,132 +1,366 @@
 fileFormatVersion: 2
 guid: 7b23fcb368491cf4ca8fcd85d12bb784
-timeCreated: 1489328559
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: balcony
-    100002: bar
-    100004: bar_shelf
-    100006: beam_1
-    100008: beam_2
-    100010: beam_3
-    100012: curtains
-    100014: platform_1
-    100016: platform_2
-    100018: platform_3
-    100020: platform_4
-    100022: railing_1
-    100024: railing_2
-    100026: railing_3
-    100028: roof_1
-    100030: roof_2
-    100032: saloon_door_1
-    100034: saloon_door_2
-    100036: //RootNode
-    100038: saloon_main
-    100040: sign
-    100042: stairs
-    400000: balcony
-    400002: bar
-    400004: bar_shelf
-    400006: beam_1
-    400008: beam_2
-    400010: beam_3
-    400012: curtains
-    400014: platform_1
-    400016: platform_2
-    400018: platform_3
-    400020: platform_4
-    400022: railing_1
-    400024: railing_2
-    400026: railing_3
-    400028: roof_1
-    400030: roof_2
-    400032: saloon_door_1
-    400034: saloon_door_2
-    400036: //RootNode
-    400038: saloon_main
-    400040: sign
-    400042: stairs
-    2300000: balcony
-    2300002: bar
-    2300004: bar_shelf
-    2300006: beam_1
-    2300008: beam_2
-    2300010: beam_3
-    2300012: curtains
-    2300014: platform_1
-    2300016: platform_2
-    2300018: platform_3
-    2300020: platform_4
-    2300022: railing_1
-    2300024: railing_2
-    2300026: railing_3
-    2300028: roof_1
-    2300030: roof_2
-    2300032: saloon_door_1
-    2300034: saloon_door_2
-    2300036: saloon_main
-    2300038: sign
-    2300040: stairs
-    3300000: balcony
-    3300002: bar
-    3300004: bar_shelf
-    3300006: beam_1
-    3300008: beam_2
-    3300010: beam_3
-    3300012: curtains
-    3300014: platform_1
-    3300016: platform_2
-    3300018: platform_3
-    3300020: platform_4
-    3300022: railing_1
-    3300024: railing_2
-    3300026: railing_3
-    3300028: roof_1
-    3300030: roof_2
-    3300032: saloon_door_1
-    3300034: saloon_door_2
-    3300036: saloon_main
-    3300038: sign
-    3300040: stairs
-    4300000: curtains
-    4300002: beam_3
-    4300004: beam_2
-    4300006: beam_1
-    4300008: bar_shelf
-    4300010: bar
-    4300012: railing_2
-    4300014: roof_2
-    4300016: saloon_door_2
-    4300018: sign
-    4300020: saloon_main
-    4300022: roof_1
-    4300024: platform_3
-    4300026: platform_4
-    4300028: railing_3
-    4300030: railing_1
-    4300032: platform_1
-    4300034: stairs
-    4300036: platform_2
-    4300038: balcony
-    4300040: saloon_door_1
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: balcony
+  - first:
+      1: 100002
+    second: bar
+  - first:
+      1: 100004
+    second: bar_shelf
+  - first:
+      1: 100006
+    second: beam_1
+  - first:
+      1: 100008
+    second: beam_2
+  - first:
+      1: 100010
+    second: beam_3
+  - first:
+      1: 100012
+    second: curtains
+  - first:
+      1: 100014
+    second: platform_1
+  - first:
+      1: 100016
+    second: platform_2
+  - first:
+      1: 100018
+    second: platform_3
+  - first:
+      1: 100020
+    second: platform_4
+  - first:
+      1: 100022
+    second: railing_1
+  - first:
+      1: 100024
+    second: railing_2
+  - first:
+      1: 100026
+    second: railing_3
+  - first:
+      1: 100028
+    second: roof_1
+  - first:
+      1: 100030
+    second: roof_2
+  - first:
+      1: 100032
+    second: saloon_door_1
+  - first:
+      1: 100034
+    second: saloon_door_2
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: saloon_main
+  - first:
+      1: 100040
+    second: sign
+  - first:
+      1: 100042
+    second: stairs
+  - first:
+      4: 400000
+    second: balcony
+  - first:
+      4: 400002
+    second: bar
+  - first:
+      4: 400004
+    second: bar_shelf
+  - first:
+      4: 400006
+    second: beam_1
+  - first:
+      4: 400008
+    second: beam_2
+  - first:
+      4: 400010
+    second: beam_3
+  - first:
+      4: 400012
+    second: curtains
+  - first:
+      4: 400014
+    second: platform_1
+  - first:
+      4: 400016
+    second: platform_2
+  - first:
+      4: 400018
+    second: platform_3
+  - first:
+      4: 400020
+    second: platform_4
+  - first:
+      4: 400022
+    second: railing_1
+  - first:
+      4: 400024
+    second: railing_2
+  - first:
+      4: 400026
+    second: railing_3
+  - first:
+      4: 400028
+    second: roof_1
+  - first:
+      4: 400030
+    second: roof_2
+  - first:
+      4: 400032
+    second: saloon_door_1
+  - first:
+      4: 400034
+    second: saloon_door_2
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: saloon_main
+  - first:
+      4: 400040
+    second: sign
+  - first:
+      4: 400042
+    second: stairs
+  - first:
+      23: 2300000
+    second: balcony
+  - first:
+      23: 2300002
+    second: bar
+  - first:
+      23: 2300004
+    second: bar_shelf
+  - first:
+      23: 2300006
+    second: beam_1
+  - first:
+      23: 2300008
+    second: beam_2
+  - first:
+      23: 2300010
+    second: beam_3
+  - first:
+      23: 2300012
+    second: curtains
+  - first:
+      23: 2300014
+    second: platform_1
+  - first:
+      23: 2300016
+    second: platform_2
+  - first:
+      23: 2300018
+    second: platform_3
+  - first:
+      23: 2300020
+    second: platform_4
+  - first:
+      23: 2300022
+    second: railing_1
+  - first:
+      23: 2300024
+    second: railing_2
+  - first:
+      23: 2300026
+    second: railing_3
+  - first:
+      23: 2300028
+    second: roof_1
+  - first:
+      23: 2300030
+    second: roof_2
+  - first:
+      23: 2300032
+    second: saloon_door_1
+  - first:
+      23: 2300034
+    second: saloon_door_2
+  - first:
+      23: 2300036
+    second: saloon_main
+  - first:
+      23: 2300038
+    second: sign
+  - first:
+      23: 2300040
+    second: stairs
+  - first:
+      33: 3300000
+    second: balcony
+  - first:
+      33: 3300002
+    second: bar
+  - first:
+      33: 3300004
+    second: bar_shelf
+  - first:
+      33: 3300006
+    second: beam_1
+  - first:
+      33: 3300008
+    second: beam_2
+  - first:
+      33: 3300010
+    second: beam_3
+  - first:
+      33: 3300012
+    second: curtains
+  - first:
+      33: 3300014
+    second: platform_1
+  - first:
+      33: 3300016
+    second: platform_2
+  - first:
+      33: 3300018
+    second: platform_3
+  - first:
+      33: 3300020
+    second: platform_4
+  - first:
+      33: 3300022
+    second: railing_1
+  - first:
+      33: 3300024
+    second: railing_2
+  - first:
+      33: 3300026
+    second: railing_3
+  - first:
+      33: 3300028
+    second: roof_1
+  - first:
+      33: 3300030
+    second: roof_2
+  - first:
+      33: 3300032
+    second: saloon_door_1
+  - first:
+      33: 3300034
+    second: saloon_door_2
+  - first:
+      33: 3300036
+    second: saloon_main
+  - first:
+      33: 3300038
+    second: sign
+  - first:
+      33: 3300040
+    second: stairs
+  - first:
+      43: 4300000
+    second: curtains
+  - first:
+      43: 4300002
+    second: beam_3
+  - first:
+      43: 4300004
+    second: beam_2
+  - first:
+      43: 4300006
+    second: beam_1
+  - first:
+      43: 4300008
+    second: bar_shelf
+  - first:
+      43: 4300010
+    second: bar
+  - first:
+      43: 4300012
+    second: railing_2
+  - first:
+      43: 4300014
+    second: roof_2
+  - first:
+      43: 4300016
+    second: saloon_door_2
+  - first:
+      43: 4300018
+    second: sign
+  - first:
+      43: 4300020
+    second: saloon_main
+  - first:
+      43: 4300022
+    second: roof_1
+  - first:
+      43: 4300024
+    second: platform_3
+  - first:
+      43: 4300026
+    second: platform_4
+  - first:
+      43: 4300028
+    second: railing_3
+  - first:
+      43: 4300030
+    second: railing_1
+  - first:
+      43: 4300032
+    second: platform_1
+  - first:
+      43: 4300034
+    second: stairs
+  - first:
+      43: 4300036
+    second: platform_2
+  - first:
+      43: 4300038
+    second: balcony
+  - first:
+      43: 4300040
+    second: saloon_door_1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 1
+    second: {fileID: 2100000, guid: 8afcd2a38ae1d3b41a40ec761820f8d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2
+    second: {fileID: 2100000, guid: a20aaee003a5b954294f73ba15c0bd36, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -134,13 +368,22 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -148,24 +391,34 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

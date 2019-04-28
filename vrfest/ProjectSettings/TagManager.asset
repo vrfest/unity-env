@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - SpawnLocation
+  - Phase2Explode
   layers:
   - Default
   - TransparentFX
