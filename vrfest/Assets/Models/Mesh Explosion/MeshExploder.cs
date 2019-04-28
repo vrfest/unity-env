@@ -68,11 +68,11 @@ public class MeshExploder : MonoBehaviour {
 	}
 	
 	void Prepare(Mesh oldMesh, bool cachePreparation = true) {
-		if (!oldMesh.isReadable) {
+        /*if (!oldMesh.isReadable) {
 			Debug.LogError("The mesh is not readable. Switch on the \"Read/Write Enabled\"" +
 				" option on the mesh's import settings.");
 			return;
-		}
+		}*/
 		
 		var usePhysics = type == ExplosionType.Physics;
 		

@@ -20,7 +20,7 @@ public class Route : MonoBehaviour
     GameObject TV;
     GameObject VideoObject;
 
-    int phase = 1;
+    public int phase = 1;
 
     void Start()
     {
@@ -43,7 +43,8 @@ public class Route : MonoBehaviour
                 }
                 else {
                     stage.transform.position = new Vector3(stage.transform.position.x, stage_y_end, stage.transform.position.z);
-                    Destroy(interior);
+                    //Destroy(interior);
+                    interior.GetComponent<ArcPath>().enabled = true;
                     phase++;
                 }
                 break;
@@ -68,10 +69,19 @@ public class Route : MonoBehaviour
                     phase++;
                 }
                 break;
-            case 4: // Stall for bar to make impact with Mars
+            case 4: // Wait on interior to fall
                 break;
-            case 5:
+            case 5: // Mars explodes
+                Transform planetTransform = surface.transform.Find("Environment");
+                int planetChildCount = planetTransform.childCount;
+                for(int i = 0; i < planetChildCount; i++) {
+                    GameObject child = planetTransform.GetChild(i).gameObject;
+                    child.BroadcastMessage("Explode");
+                    Destroy(child);
+                }
+                phase++;
                 break;
+                
         }
     }
 }
