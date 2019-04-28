@@ -34,8 +34,8 @@ public class PrecisionSpawner : MonoBehaviour
             dancer.noiseFrequency *= UnityEngine.Random.Range(0.4f, 1.8f);
             dancer.randomSeed = UnityEngine.Random.Range(0, 0xffffff);
 
-            var renderer = dancer.GetComponentInChildren<Renderer>();
-            renderer.material.color = UnityEngine.Random.ColorHSV(0, 1, 0.6f, 0.8f, 0.8f, 1.0f);
+            //var renderer = dancer.GetComponentInChildren<Renderer>();
+            //renderer.material.color = UnityEngine.Random.ColorHSV(0, 1, 0.6f, 0.8f, 0.8f, 1.0f);
         }
     }
 }

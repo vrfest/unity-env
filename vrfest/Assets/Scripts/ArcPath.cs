@@ -10,8 +10,8 @@ public class ArcPath : MonoBehaviour
     const float halfFinalZ = -200f;
 
     Vector3 xMove = new Vector3(0.25f, 0, 0);
-    Vector3 yMove = new Vector3(0, 0.75f, 0);
-    Vector3 zMove = new Vector3(0, 0, 0.75f);
+    Vector3 yMove = new Vector3(0, 0.5f, 0);
+    Vector3 zMove = new Vector3(0, 0, 0.5f);
 
     int degreesRotated = 0;
     bool rotate = true;

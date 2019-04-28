@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Route : MonoBehaviour
 {
-    const float stage_y_end = -3.4f;
-    Vector3 stage_increment = new Vector3(0, 0.1f, 0);
+    int initialPause = 500;
 
-    const float TV_y_end = 9f;
+    const float TV_y_end = 6f;
     Vector3 TV_increment = new Vector3(0, 0.05f, 0);
 
     float VideoObject_scale_x_end;
@@ -20,6 +19,14 @@ public class Route : MonoBehaviour
     GameObject TV;
     GameObject VideoObject;
 
+    int cooldown = 0; // Please remove later, technical debt high
+
+    public GameObject[] particles;
+    int particlesIndex = 0;
+    Quaternion rot = new Quaternion();
+
+    private List<Vector3> particleLocations;
+
     public int phase = 1;
 
     void Start()
@@ -29,22 +36,24 @@ public class Route : MonoBehaviour
         interior = GameObject.Find("InteriorLevel");
         TV = GameObject.Find("TV");
         VideoObject = TV.transform.Find("VideoObject").gameObject;
-        VideoObject_scale_x_end = VideoObject.transform.localScale.x * 8;
-        VideoObject_scale_y_end = VideoObject.transform.localScale.y * 8;
+        VideoObject_scale_x_end = VideoObject.transform.localScale.x * 4;
+        VideoObject_scale_y_end = VideoObject.transform.localScale.y * 4;
         VideoObject_scale_increment = new Vector3(VideoObject_scale_x_end / 100, VideoObject_scale_y_end / 100, 0);
+
+        particleLocations = new List<Vector3>();
+        foreach(GameObject particleLocation in GameObject.FindGameObjectsWithTag("ParticleLocation")) {
+            particleLocations.Add(particleLocation.transform.position);
+        }
     }
 
     void Update()
     {
+        // t e c h n i c a l d e b t
         switch (phase) {
-            case 1: // Stage rises, bar explodes
-                if(stage.transform.position.y < stage_y_end) {
-                    stage.transform.position += stage_increment;
-                }
-                else {
-                    stage.transform.position = new Vector3(stage.transform.position.x, stage_y_end, stage.transform.position.z);
-                    //Destroy(interior);
+            case 1: // Pause before interior flies off
+                if(initialPause-- < 0) {
                     interior.GetComponent<ArcPath>().enabled = true;
+                    stage.transform.GetChild(0).gameObject.SetActive(true);
                     phase++;
                 }
                 break;
@@ -80,6 +89,17 @@ public class Route : MonoBehaviour
                     Destroy(child);
                 }
                 phase++;
+                break;
+            case 6: // Cooldown
+                if (cooldown++ > 20) phase++;
+                break;
+            case 7: // PS Lightshow
+                foreach(Vector3 particleLocation in particleLocations) {
+                    GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
+                    ParticleSystem particlePrefabPS = particlePrefab.GetComponent<ParticleSystem>();
+                    particlePrefabPS.Play();
+                }
+                particlesIndex++;
                 break;
                 
         }

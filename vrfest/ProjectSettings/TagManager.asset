@@ -8,6 +8,7 @@ TagManager:
   - SpawnLocation
   - Phase2Explode
   - SurfaceLevel
+  - ParticleLocation
   layers:
   - Default
   - TransparentFX
