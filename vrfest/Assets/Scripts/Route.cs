@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Route : MonoBehaviour
 {
-    int initialPause = 500;
+    int phaseDelay = 400;
 
     const float TV_y_end = 6f;
     Vector3 TV_increment = new Vector3(0, 0.05f, 0);
@@ -53,17 +53,33 @@ public class Route : MonoBehaviour
         // t e c h n i c a l d e b t
         switch (phase) {
             case 1: // Pause before interior flies off
-                if(initialPause-- < 0) {
-                    interior.GetComponent<ArcPath>().enabled = true;
+                if(phaseDelay-- < 0) {
+                    particleDelay = 200;
+                    foreach (Vector3 particleLocation in particleLocations) {
+                        GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
+                        activeParticles.Add(particlePrefab);
+                        ParticleSystem particlePrefabPS = particlePrefab.GetComponent<ParticleSystem>();
+                        particlePrefabPS.Play();
+                    }
+                    Destroy(interior);
+
                     stage.transform.GetChild(0).gameObject.SetActive(true);
                     phase++;
                 }
                 break;
             case 2: // TV rises, frame explodes
+               
                 if (TV.transform.position.y < TV_y_end) {
                     TV.transform.position += TV_increment;
+                    if (particleDelay-- < 0) {
+                        foreach (GameObject activeParticle in activeParticles) {
+                            Destroy(activeParticle);
+                        }
+                        activeParticles.Clear();
+                    }
                 }
                 else {
+                    particleDelay = 0;
                     TV.transform.position = new Vector3(TV.transform.position.x, TV_y_end, TV.transform.position.z);
                     GameObject frame = TV.transform.Find("Frame").gameObject;
                     frame.BroadcastMessage("Explode");
@@ -77,25 +93,34 @@ public class Route : MonoBehaviour
                 }
                 else {
                     VideoObject.transform.localScale = new Vector3(VideoObject_scale_x_end, VideoObject_scale_y_end, VideoObject.transform.localScale.z);
+                    phaseDelay = 400;
                     phase++;
                 }
                 break;
-            case 4: // Wait on interior to fall
-                break;
-            case 5: // Mars explodes
-                Transform planetTransform = surface.transform.Find("Environment");
-                int planetChildCount = planetTransform.childCount;
-                for(int i = 0; i < planetChildCount; i++) {
-                    GameObject child = planetTransform.GetChild(i).gameObject;
-                    child.BroadcastMessage("Explode");
-                    Destroy(child);
+            case 4: // Remove Mars
+                if (phaseDelay-- > 0) break;
+                particleDelay = 150;
+                foreach (Vector3 particleLocation in particleLocations) {
+                    GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
+                    activeParticles.Add(particlePrefab);
+                    ParticleSystem particlePrefabPS = particlePrefab.GetComponent<ParticleSystem>();
+                    particlePrefabPS.Play();
                 }
+                particlesIndex++;
+                Destroy(surface);
                 phase++;
                 break;
-            case 6: // Cooldown
-                if (cooldown++ > 20) phase++;
+            case 5:
+                if(particleDelay-- <= 0) {
+                    foreach (GameObject activeParticle in activeParticles) {
+                        Destroy(activeParticle);
+                    }
+                    activeParticles.Clear();
+                    particleDelay = 0;
+                    phase++;
+                }
                 break;
-            case 7: // PS Lightshow
+            case 6: // PS Lightshow
                 if(particleDelay <= 0) {
                     particleDelay = 200;
                     foreach (GameObject activeParticle in activeParticles) {
