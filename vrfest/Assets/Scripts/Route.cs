@@ -99,7 +99,6 @@ public class Route : MonoBehaviour
                 break;
             case 4: // Remove Mars
                 if (phaseDelay-- > 0) break;
-                particleDelay = 150;
                 foreach (Vector3 particleLocation in particleLocations) {
                     GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
                     activeParticles.Add(particlePrefab);
@@ -108,19 +107,14 @@ public class Route : MonoBehaviour
                 }
                 particlesIndex++;
                 Destroy(surface);
+                foreach (GameObject activeParticle in activeParticles) {
+                    Destroy(activeParticle);
+                }
+                activeParticles.Clear();
+                particleDelay = 0;
                 phase++;
                 break;
-            case 5:
-                if(particleDelay-- <= 0) {
-                    foreach (GameObject activeParticle in activeParticles) {
-                        Destroy(activeParticle);
-                    }
-                    activeParticles.Clear();
-                    particleDelay = 0;
-                    phase++;
-                }
-                break;
-            case 6: // PS Lightshow
+            case 5: // PS Lightshow
                 if(particleDelay <= 0) {
                     particleDelay = 200;
                     foreach (GameObject activeParticle in activeParticles) {
