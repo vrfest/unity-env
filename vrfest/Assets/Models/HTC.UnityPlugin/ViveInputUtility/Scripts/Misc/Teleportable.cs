@@ -100,14 +100,13 @@ namespace HTC.UnityPlugin.Vive
             }
 
             var headVector = Vector3.ProjectOnPlane(pivot.position - target.position, target.up);
-            var targetPos = hitResult.worldPosition - headVector;
+            var targetPos = hitResult.worldPosition; // - headVector;
 
             if (VRModule.activeModule != VRModuleActiveEnum.SteamVR && fadeDuration != 0f)
             {
                 Debug.LogWarning("Install SteamVR plugin and enable SteamVRModule support to enable fading");
                 fadeDuration = 0f;
             }
-
             teleportCoroutine = StartCoroutine(StartTeleport(targetPos, fadeDuration));
         }
 
@@ -149,7 +148,7 @@ namespace HTC.UnityPlugin.Vive
                 yield return new WaitForEndOfFrame(); // to avoid from rendering guideline in wrong position
                 target.position = position;
             }
-
+            Debug.Log(target.position.ToString() + " | " + position.ToString());
             teleportCoroutine = null;
         }
     }
