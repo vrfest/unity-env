@@ -19,6 +19,8 @@ public class Route : MonoBehaviour
     GameObject TV;
     GameObject VideoObject;
 
+    public Material particleSkybox;
+
     int cooldown = 0; // Please remove later, technical debt high
 
     public GameObject[] particles;
@@ -52,8 +54,9 @@ public class Route : MonoBehaviour
     {
         // t e c h n i c a l d e b t
         switch (phase) {
-            case 1: // Pause before interior flies off
-                if(phaseDelay-- < 0) {
+            case 1: // Pause before interior explodes
+
+                if (phaseDelay-- < 0) {
                     particleDelay = 200;
                     foreach (Vector3 particleLocation in particleLocations) {
                         GameObject particlePrefab = Instantiate(particles[particlesIndex], particleLocation, rot);
@@ -66,6 +69,7 @@ public class Route : MonoBehaviour
                     stage.transform.GetChild(0).gameObject.SetActive(true);
                     phase++;
                 }
+
                 break;
             case 2: // TV rises, frame explodes
                
@@ -114,7 +118,11 @@ public class Route : MonoBehaviour
                 particleDelay = 0;
                 phase++;
                 break;
-            case 5: // PS Lightshow
+            case 5: // Change skybox
+                //RenderSettings.skybox = particleSkybox;
+                phase++;
+                break;
+            case 6: // PS Lightshow
                 if(particleDelay <= 0) {
                     particleDelay = 200;
                     foreach (GameObject activeParticle in activeParticles) {
