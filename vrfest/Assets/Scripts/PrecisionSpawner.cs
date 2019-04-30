@@ -6,9 +6,12 @@ public class PrecisionSpawner : MonoBehaviour
 {
     [SerializeField] GameObject _prefab;
     public Material[] clothes;
+    public Sprite[] usernames;
+    //public Sprite[] face;
+
     void Start() {
         GameObject[] locations = GameObject.FindGameObjectsWithTag("SpawnLocation");
-
+        int usernamesIndex = 0;
         foreach (GameObject location in locations) {
             var rot = Quaternion.AngleAxis(Random.value * Mathf.PI, Vector2.up);
             var go = Instantiate(_prefab, location.transform.position, rot);
@@ -23,6 +26,7 @@ public class PrecisionSpawner : MonoBehaviour
                     Destroy(go.transform.Find("Neo_Spine1").transform.Find("HorseHead").gameObject);
                     break;
             }
+            go.transform.Find("Neo_Spine").transform.Find("Username").gameObject.GetComponent<SpriteRenderer>().sprite = usernames[usernamesIndex++];
             var dancer = go.GetComponent<Puppet.Dancer>();
 
             dancer.footDistance *= Random.Range(0.8f, 2.0f);

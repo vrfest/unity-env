@@ -20,3 +20,4 @@ MonoBehaviour:
   - KeepLoadedShadersAlive
   - UseOculusMobilerecommendedQualitySettings
   - UseOculusMobilerecommendedGraphicsTierSettings
+  - TextureCompression
