@@ -34,7 +34,7 @@ public class PrecisionSpawner : MonoBehaviour
             dancer.hipPositionNoise *= Random.Range(0.75f, 1.25f);
             dancer.hipRotationNoise *= Random.Range(0.75f, 1.25f);
 
-            dancer.spineBend = Random.Range(4.0f, -16.0f);
+            dancer.spineBend = Random.Range(4.0f, -12.0f);
             dancer.spineRotationNoise *= Random.Range(0.75f, 1.25f);
 
             dancer.handPositionNoise *= Random.Range(0.5f, 2.0f);
