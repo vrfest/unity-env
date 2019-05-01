@@ -8,15 +8,20 @@ public class UserInterface : MonoBehaviour
     public string currentUsername = null;
     public List<string> currentInventory;
     public GameObject currentGO;
+    public GameObject HUDCanvas;
     public HTC.UnityPlugin.Vive.Menuable currentMenuable;
 
     public float balance;
+    public List<string> playerInventory;
     float lastPrice;
     GameObject PlayerInteractionCanvas;
     // Start is called before the first frame update
     void Start()
     {
+        balance = 3.9724F;
+        lastPrice = 0F;
         PlayerInteractionCanvas = GameObject.Find("PlayerInteractionCanvas");
+        HUDCanvas = GameObject.Find("HUDCanvas");
         friends = new HashSet<string>();
     }
 
@@ -38,10 +43,10 @@ public class UserInterface : MonoBehaviour
 
     public void addFriend() {
         if (friends.Add(currentUsername)) { // Wasn't friends before
-            gameObject.transform.Find("AddFriend").GetComponent<UnityEngine.UI.Text>().text = "Added!";
+            PlayerInteractionCanvas.transform.Find("AddFriend").transform.Find("Text").gameObject.GetComponent<UnityEngine.UI.Text>().text = "Added!";
         }
         else {
-            gameObject.transform.Find("AddFriend").GetComponent<UnityEngine.UI.Text>().text = "Already Friends";
+            PlayerInteractionCanvas.transform.Find("AddFriend").transform.Find("Text").gameObject.GetComponent<UnityEngine.UI.Text>().text = "Already Friends";
         }
     }
 
@@ -75,13 +80,22 @@ public class UserInterface : MonoBehaviour
     }
 
     public void purchase() {
-        balance -= lastPrice;
-        currentMenuable.inventory.Clear();
-        PlayerInteractionCanvas.transform.Find("HorseHead").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
-        PlayerInteractionCanvas.transform.Find("HorseHead").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
-        PlayerInteractionCanvas.transform.Find("DevilOrAngel").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
-        PlayerInteractionCanvas.transform.Find("DevilOrAngel").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
-        PlayerInteractionCanvas.transform.Find("DescriptionText").GetComponent<UnityEngine.UI.Text>().enabled = false;
+        if (lastPrice > 0F) {
+            balance -= lastPrice;
+            HUDCanvas.transform.Find("BalanceText").GetComponent<UnityEngine.UI.Text>().text = "Your balance: " + balance + " ETH";
+            playerInventory.Add(currentInventory[0]);
+            currentMenuable.inventory.Clear();
+            PlayerInteractionCanvas.transform.Find("HorseHead").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("HorseHead").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("DevilOrAngel").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("DevilOrAngel").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("DescriptionText").GetComponent<UnityEngine.UI.Text>().enabled = false;
+            lastPrice = 0;
+        }
+    }
+
+    public void hidePlayerInventory() {
+
     }
 
     public void close() {
