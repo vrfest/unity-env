@@ -21,12 +21,17 @@ public class PrecisionSpawner : MonoBehaviour
                 case 1:
                     Destroy(go.transform.Find("Neo_Spine").transform.Find("DemonWings").gameObject);
                     Destroy(go.transform.Find("Neo_Spine1").transform.Find("Halo").gameObject);
+                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("HorseHead");
                     break;
                 case 2:
                     Destroy(go.transform.Find("Neo_Spine1").transform.Find("HorseHead").gameObject);
+                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("DemonWings");
+                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("Halo");
                     break;
             }
+            go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().username = usernames[usernamesIndex].name;
             go.transform.Find("Neo_Spine").transform.Find("Username").gameObject.GetComponent<SpriteRenderer>().sprite = usernames[usernamesIndex++];
+            
             var dancer = go.GetComponent<Puppet.Dancer>();
 
             dancer.footDistance *= Random.Range(0.8f, 2.0f);

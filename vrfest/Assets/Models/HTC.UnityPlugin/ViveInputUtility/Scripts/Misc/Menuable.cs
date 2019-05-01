@@ -5,6 +5,7 @@ using HTC.UnityPlugin.VRModuleManagement;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 #if VIU_STEAMVR_2_0_0_OR_NEWER
 using Valve.VR;
 #endif
@@ -19,6 +20,11 @@ namespace HTC.UnityPlugin.Vive {
             Grip,
         }
 
+        public string username;
+        public List<string> inventory;
+        UserInterface UIScript;
+        GameObject PlayerInteractionCanvas;
+
         public float fadeDuration = 0.3f;
         [SerializeField]
         private Material m_reticleMaterial;
@@ -29,7 +35,11 @@ namespace HTC.UnityPlugin.Vive {
 
         public Material reticleMaterial { get { return m_reticleMaterial; } set { m_reticleMaterial = value; } }
 
-
+        void Start() {
+            inventory = new List<string>();
+            UIScript = GameObject.Find("UIScript").GetComponent<UserInterface>();
+            PlayerInteractionCanvas = GameObject.Find("PlayerInteractionCanvas");
+        }
 
         public void OnPointer3DPressExit(Pointer3DEventData eventData) {
             // skip if it was teleporting
@@ -64,12 +74,14 @@ namespace HTC.UnityPlugin.Vive {
                 Debug.LogWarning("Install SteamVR plugin and enable SteamVRModule support to enable fading");
                 fadeDuration = 0f;
             }
-
             openMenu();
         }
 
         private void openMenu() {
-            GameObject.Find("Menu").transform.position += new Vector3(0, 1.0f, 0);
+            UIScript.currentUsername = username;
+            PlayerInteractionCanvas.transform.Find("UsernameText").gameObject.GetComponent<UnityEngine.UI.Text>().text = username;
+            PlayerInteractionCanvas.GetComponent<Canvas>().enabled = true;
+            // Move UI to view
         }
     }
 }

@@ -148,7 +148,7 @@ namespace HTC.UnityPlugin.Vive
                 yield return new WaitForEndOfFrame(); // to avoid from rendering guideline in wrong position
                 target.position = position;
             }
-            Debug.Log(target.position.ToString() + " | " + position.ToString());
+            //Debug.Log(target.position.ToString() + " | " + position.ToString());
             teleportCoroutine = null;
         }
     }
