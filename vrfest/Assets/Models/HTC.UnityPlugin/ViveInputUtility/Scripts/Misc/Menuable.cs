@@ -21,7 +21,7 @@ namespace HTC.UnityPlugin.Vive {
         }
 
         public string username;
-        public List<string> inventory;
+        public List<string> inventory = new List<string>();
         UserInterface UIScript;
         GameObject PlayerInteractionCanvas;
 
@@ -36,7 +36,7 @@ namespace HTC.UnityPlugin.Vive {
         public Material reticleMaterial { get { return m_reticleMaterial; } set { m_reticleMaterial = value; } }
 
         void Start() {
-            inventory = new List<string>();
+            
             UIScript = GameObject.Find("UIScript").GetComponent<UserInterface>();
             PlayerInteractionCanvas = GameObject.Find("PlayerInteractionCanvas");
         }
@@ -79,7 +79,25 @@ namespace HTC.UnityPlugin.Vive {
 
         private void openMenu() {
             UIScript.currentUsername = username;
+            UIScript.currentInventory = inventory;
+            UIScript.currentMenuable = this;
+
             PlayerInteractionCanvas.transform.Find("UsernameText").gameObject.GetComponent<UnityEngine.UI.Text>().text = username;
+            PlayerInteractionCanvas.transform.Find("HorseHead").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("HorseHead").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
+            
+            PlayerInteractionCanvas.transform.Find("DevilOrAngel").gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("DevilOrAngel").Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("InventoryText").GetComponent<UnityEngine.UI.Text>().enabled = false;
+            PlayerInteractionCanvas.transform.Find("DescriptionText").GetComponent<UnityEngine.UI.Text>().enabled = false;
+
+
+            GameObject purchaseGO = PlayerInteractionCanvas.transform.Find("Purchase").gameObject;
+            purchaseGO.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            purchaseGO.GetComponent<UnityEngine.UI.Image>().enabled = false;
+            purchaseGO.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().enabled = false;
+            purchaseGO.transform.Find("Image").GetComponent<UnityEngine.UI.Image>().enabled = false;
+
             PlayerInteractionCanvas.GetComponent<Canvas>().enabled = true;
             // Move UI to view
         }

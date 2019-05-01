@@ -21,12 +21,11 @@ public class PrecisionSpawner : MonoBehaviour
                 case 1:
                     Destroy(go.transform.Find("Neo_Spine").transform.Find("DemonWings").gameObject);
                     Destroy(go.transform.Find("Neo_Spine1").transform.Find("Halo").gameObject);
-                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("HorseHead");
+                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("Horse Head");
                     break;
                 case 2:
                     Destroy(go.transform.Find("Neo_Spine1").transform.Find("HorseHead").gameObject);
-                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("DemonWings");
-                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("Halo");
+                    go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().inventory.Add("Devil Or Angel");
                     break;
             }
             go.transform.Find("Body").gameObject.GetComponent<HTC.UnityPlugin.Vive.Menuable>().username = usernames[usernamesIndex].name;
@@ -56,5 +55,6 @@ public class PrecisionSpawner : MonoBehaviour
             //var renderer = dancer.GetComponentInChildren<Renderer>();
             //renderer.material.color = Random.ColorHSV(0, 1, 0.6f, 0.8f, 0.8f, 1.0f);
         }
+        Destroy(_prefab);
     }
 }
